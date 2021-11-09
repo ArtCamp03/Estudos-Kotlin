@@ -1,6 +1,6 @@
 package Escolhas
 
-enum class cor(val vermelho: Int, val verde: Int, val azul: Int) {
+enum class Cor(val vermelho: Int, val verde: Int, val azul: Int) {
     VERMELHO(255, 0, 0),
     LARANJA(255,165,0),
     AMARELO(255, 255, 0),
@@ -11,6 +11,6 @@ enum class cor(val vermelho: Int, val verde: Int, val azul: Int) {
 }
 
 fun main(){
-    val rgb = cor.VERMELHO.rgb()
+    val rgb = Cor.VERMELHO.rgb()
     println(rgb)
 }
