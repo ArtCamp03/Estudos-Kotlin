@@ -32,9 +32,9 @@ fun LerIdade(): Int{
     val reader = FileReader(File("src/idade.txt"))
     val buffer = BufferedReader(reader)
 
-    try {
+    return try {
         val numero = buffer.readLine()
-        return Integer.parseInt(numero)
+        Integer.parseInt(numero)
     } catch (e: NumberFormatException ){
         return null
     }finally {
