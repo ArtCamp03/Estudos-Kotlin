@@ -28,7 +28,7 @@ fun porcentagem(numero: Int): String{
 
  */
 
-fun LerIdade(): Int{
+fun LerIdade(): String {
     val reader = FileReader(File("src/idade.txt"))
     val buffer = BufferedReader(reader)
 
@@ -36,7 +36,7 @@ fun LerIdade(): Int{
         val numero = buffer.readLine()
         Integer.parseInt(numero)
     } catch (e: NumberFormatException ){
-        return null
+        return "ERRO"
     }finally {
         buffer.close()
     }

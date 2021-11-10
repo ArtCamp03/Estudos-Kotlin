@@ -15,5 +15,5 @@ fun main(){
     println(fruta2.last())
 
     val numeros = setOf(1, 145, 2)
-    println(numeros.max())
+    println(numeros)
 }
